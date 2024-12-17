@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Icon.jpg">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/teachers.css">
+    <title>هيئة المدرسة</title>
+</head>
+<body dir="rtl">
+    <header class=" position-fixed header">
+        <div class="nav">
+            <div class="viewport">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            الصفحة الرئيسية
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="about_school.html">
+                            عن المدرسة
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="management.html">
+                            إدارة المدرسة
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">
+                            هيئة التدريس
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="The_Laws.html">
+                            القوانين
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <div class="menu">
+                        <div class="menu-item">
+                            <span class="menu-text">الجداول</span>
+                            <span class="arrow" onclick="toggleSubmenu()">&#x2192;</span>
+                            <ul class="submenu">
+                                <li>جدول الحصص</li>
+                                <li><a href="test.html">جدول الإمتحانات</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="photo.html">
+                            المسابقات
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="link.html">
+                            الروابط
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="perants.html">
+                            مجلس الامناء
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="communicate.html">
+                            تواصل معنا
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button id="btn-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <div class="menu" id="menu">
+        <button class="btn btn-close" id="close" aria-labelledby="menu">
+            <i class="fa fa-close"></i>
+        </button>
+        <ul>
+            <li class="profile">
+                <div class="img-box">
+                    <img src="img/Icon.jpg" alt="school" class="img-box">
+                </div>
+                <h2>مدرسة المساعي المشكورة</h2>
+            </li>
+            <li>
+                <a href="index.html" class="HyperLink">
+                    <i class="fas fa-home"></i>
+                    <p>الصفحة الرئيسية</p>
+                </a>
+            </li>
+            <li>
+                <a href="about_school.html" class="HyperLink">
+                    <i class="fas fa-book-open"></i>
+                    <p>عن المدرسة</p>
+                </a>
+            </li>
+            <li>
+                <a href="management.html" class="HyperLink">
+                    <i class="fas fa-server"></i>
+                    <p>إدارة المدرسة</p>
+                </a>
+            </li>
+            <li>
+                <a href="teachers.html" class="HyperLink">
+                    <i class="fas fa-registered"></i>
+                    <p>هيئة التدريس</p>
+                </a>
+            </li>
+            <li>
+                <a href="The_Laws.html" class="HyperLink">
+                    <i class="fas fa-code-commit"></i>
+                    <p>القوانين</p>
+                </a>
+            </li>
+            <li>
+                <div class="menu_2">
+                    <i class="fa fa-table"></i>
+                    <div class="menu-item_2">
+                        <span class="menu-text_2">الجداول</span>
+                        <span class="arrow_2" onclick="toggleSubmenu_2()">&#x2192;</span>
+                        <ul class="submenu_2">
+                            <li>جدول الحصص</li>
+                            <li><a href="test.html">جدول الإمتحانات</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="photo.html" class="HyperLink">
+                    <i class="fa fa-award"></i>
+                    <p>المسابقات</p>
+                </a>
+            </li>
+            <li>
+                <a href="link.html" class="HyperLink">
+                    <i class="fas fa-link"></i>
+                    <p>الروابط</p>
+                </a>
+            </li>
+            <li>
+                <a href="perants.html" class="HyperLink">
+                    <i class="fa fa-users"></i>
+                    <p>مجلس الامناء</p>
+                </a>
+            </li>
+            <li>
+                <a href="communicate.html" class="HyperLink">
+                    <i class="fas fa-phone"></i>
+                    <p>تواصل معنا</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="title">
+        <span>
+            هيئة التدريس
+        </span>
+    </div>
+    <br>
+    <div class="links">
+        <div class="link">
+            <div class="desc">
+                <br>
+                <div class="text">
+                    <p>P/ مصطفي النحاس</p>
+                </div>
+                <div class="left">
+                    <p>مدرس رياضيات</p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <div class="container-fluid">
+                        <div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="facebook brand">
+                                        <a href="" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-facebook icons-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="whatsapp brand">
+                                        <a href="https://iwtsp.com/201010561556?text=مرحبا انا اريد التواصل معك" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-whatsapp icon-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="link">
+            <div class="desc">
+                <br>
+                <div class="text">
+                    <p>P/ حسين سبع</p>
+                </div>
+                <div class="left">
+                    <p>مدرس رياضيات</p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <div class="container-fluid">
+                        <div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="facebook brand">
+                                        <a href="" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-facebook icons-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="whatsapp brand">
+                                        <a href="https://iwtsp.com/201012266086?text=مرحبا انا اريد التواصل معك" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-whatsapp icon-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="link">
+            <div class="desc">
+                <br>
+                <div class="text">
+                    <p>P/ ماهر حمد</p>
+                </div>
+                <div class="left">
+                    <p>لغة عربية</p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <div class="container-fluid">
+                        <div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="facebook brand">
+                                        <a href="" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-facebook icons-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="whatsapp brand">
+                                        <a href="https://iwtsp.com/201276398557?text=مرحبا انا اريد التواصل معك" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-whatsapp icon-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="link">
+            <div class="desc">
+                <br>
+                <div class="text">
+                    <p>P/ ايمن نجم</p>
+                </div>
+                <div class="left">
+                    <p>مدرس لغة عربية</p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <div class="container-fluid">
+                        <div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="facebook brand">
+                                        <a href="" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-facebook icons-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="whatsapp brand">
+                                        <a href="https://iwtsp.com/201095450569?text=مرحبا انا اريد التواصل معك" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-whatsapp icon-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="link">
+            <div class="desc">
+                <br>
+                <div class="text">
+                    <p>P/ محمود الهلباوي</p>
+                </div>
+                <div class="left">
+                    <p>مدرس لغة انجليزية</p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <div class="container-fluid">
+                        <div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="facebook brand">
+                                        <a href="" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-facebook icons-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="whatsapp brand">
+                                        <a href="https://iwtsp.com/201005371769?text=مرحبا انا اريد التواصل معك" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-whatsapp icon-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="link">
+            <div class="desc">
+                <br>
+                <div class="text">
+                    <p>P/ اسماعيل</p>
+                </div>
+                <div class="left">
+                    <p>مدرس لغة انجليزية</p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <div class="container-fluid">
+                        <div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="facebook brand">
+                                        <a href="" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-facebook icons-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="whatsapp brand">
+                                        <a href="https://iwtsp.com/201060375330?text=مرحبا انا اريد التواصل معك" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-whatsapp icon-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="link">
+            <div class="desc">
+                <br>
+                <div class="text">
+                    <p>P/ يوسف غنام</p>
+                </div>
+                <div class="left">
+                    <p>مدرس حاسب الي</p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <div class="container-fluid">
+                        <div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="facebook brand">
+                                        <a href="" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-facebook icons-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="whatsapp brand">
+                                        <a href="https://iwtsp.com/201062765036?text=مرحبا انا اريد التواصل معك" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-whatsapp icon-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="link">
+            <div class="desc">
+                <br>
+                <div class="text">
+                    <p>P/ صالح</p>
+                </div>
+                <div class="left">
+                    <p>مدرس تربية فنية</p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <div class="container-fluid">
+                        <div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="facebook brand">
+                                        <a href="" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-facebook icons-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="whatsapp brand">
+                                        <a href="https://iwtsp.com/201227406038?text=مرحبا انا اريد التواصل معك" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-whatsapp icon-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="link">
+            <div class="desc">
+                <br>
+                <div class="text">
+                    <p>P/ احمد سنوسي</p>
+                </div>
+                <div class="left">
+                    <p>مدرس تربية رياضية</p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <div class="container-fluid">
+                        <div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="facebook brand">
+                                        <a href="" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-facebook icons-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="whatsapp brand">
+                                        <a href="https://iwtsp.com/201003660380?text=مرحبا انا اريد التواصل معك" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-whatsapp icon-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="link">
+            <div class="desc">
+                <br>
+                <div class="text">
+                    <p>P/ اشرف وهدان</p>
+                </div>
+                <div class="left">
+                    <p>مدرس حاسب الى</p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <div class="container-fluid">
+                        <div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="facebook brand">
+                                        <a href="" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-facebook icons-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="whatsapp brand">
+                                        <a href="https://iwtsp.com/201001357185?text=مرحبا انا اريد التواصل معك" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-whatsapp icon-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="link">
+            <div class="desc">
+                <br>
+                <div class="text">
+                    <p>P/ رفعت</p>
+                </div>
+                <div class="left">
+                    <p>مسؤول عن المسرح و اشياء اخري</p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <div class="container-fluid">
+                        <div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="facebook brand">
+                                        <a href="" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-facebook icons-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="whatsapp brand">
+                                        <a href="https://iwtsp.com/201286814170?text=مرحبا انا اريد التواصل معك" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-whatsapp icon-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="link">
+            <div class="desc">
+                <br>
+                <div class="text">
+                    <p>P/ حمدي عطية</p>
+                </div>
+                <div class="left">
+                    <p>مدرس دراسات إجتماعية</p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <div class="container-fluid">
+                        <div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="facebook brand">
+                                        <a href="" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-facebook icons-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-brand">
+                                <div class="social">
+                                    <div class="whatsapp brand">
+                                        <a href="https://iwtsp.com/201032597333?text=مرحبا انا اريد التواصل معك" target="_blank">
+                                            <div>
+                                                <svg class="svg-inline--fa fa-whatsapp icon-first" aria-hidden="true" focusable="false" data-prefix="fab"
+                                                    data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                                    data-fa-i2svg="">
+                                                    <path fill="currentColor"
+                                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <button class="btnup" title="العودة للأعلى" style="display: block;">
+        <svg class="svg-inline--fa fa-angle-up" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"></path></svg><!-- <i class="fa fa-angle-up"></i> Font Awesome fontawesome.com -->
+    </button>
+    <script src="js/main.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+</html>

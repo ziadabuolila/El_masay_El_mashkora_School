@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/Icon.jpg">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/perants.css">
+    <title>جداول الامتحانات</title>
+</head>
+<body dir="rtl">
+    <header class=" position-fixed header">
+        <div class="nav">
+            <div class="viewport">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            الصفحة الرئيسية
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="about_school.html">
+                            عن المدرسة
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="management.html">
+                            إدارة المدرسة
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="teachers.html">
+                            هيئة التدريس
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="The_Laws.html">
+                            القوانين
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <div class="menu">
+                        <div class="menu-item">
+                            <span class="menu-text">الجداول</span>
+                            <span class="arrow" onclick="toggleSubmenu()">&#x2192;</span>
+                            <ul class="submenu">
+                                <li>جدول الحصص</li>
+                                <li><a href="test.html">جدول الإمتحانات</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="photo.html">
+                            المسابقات
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="link.html">
+                            الروابط
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="perants.html">
+                            مجلس الامناء
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="communicate.html">
+                            تواصل معنا
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button id="btn-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <div class="menu" id="menu">
+        <button class="btn btn-close" id="close" aria-labelledby="menu">
+            <i class="fa fa-close"></i>
+        </button>
+        <ul>
+            <li class="profile">
+                <div class="img-box">
+                    <img src="img/Icon.jpg" alt="school" class="img-box">
+                </div>
+                <h2>مدرسة المساعي المشكورة</h2>
+            </li>
+            <li>
+                <a href="index.html" class="HyperLink">
+                    <i class="fas fa-home"></i>
+                    <p>الصفحة الرئيسية</p>
+                </a>
+            </li>
+            <li>
+                <a href="about_school.html" class="HyperLink">
+                    <i class="fas fa-book-open"></i>
+                    <p>عن المدرسة</p>
+                </a>
+            </li>
+            <li>
+                <a href="management.html" class="HyperLink">
+                    <i class="fas fa-server"></i>
+                    <p>إدارة المدرسة</p>
+                </a>
+            </li>
+            <li>
+                <a href="teachers.html" class="HyperLink">
+                    <i class="fas fa-registered"></i>
+                    <p>هيئة التدريس</p>
+                </a>
+            </li>
+            <li>
+                <a href="The_Laws.html" class="HyperLink">
+                    <i class="fas fa-code-commit"></i>
+                    <p>القوانين</p>
+                </a>
+            </li>
+            <li>
+                <div class="menu_2">
+                    <i class="fa fa-table"></i>
+                    <div class="menu-item_2">
+                        <span class="menu-text_2">الجداول</span>
+                        <span class="arrow_2" onclick="toggleSubmenu_2()">&#x2192;</span>
+                        <ul class="submenu_2">
+                            <li>جدول الحصص</li>
+                            <li><a href="test.html">جدول الإمتحانات</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="photo.html" class="HyperLink">
+                    <i class="fa fa-award"></i>
+                    <p>المسابقات</p>
+                </a>
+            </li>
+            <li>
+                <a href="link.html" class="HyperLink">
+                    <i class="fas fa-link"></i>
+                    <p>الروابط</p>
+                </a>
+            </li>
+            <li>
+                <a href="perants.html" class="HyperLink">
+                    <i class="fa fa-users"></i>
+                    <p>مجلس الامناء</p>
+                </a>
+            </li>
+            <li>
+                <a href="communicate.html" class="HyperLink">
+                    <i class="fas fa-phone"></i>
+                    <p>تواصل معنا</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="show-board">
+        <div class="title-info"> 
+            <div class="btns-export-group">
+                <button class="btn-export export mx-2" onclick="ExportToXLSX('xls')">Download Excel <i class="fa fa-download"></i></button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="section-title_1">بيانات ولي الامر</div>
+        <div class="section-title">بيانات الاب</div>
+        <form>
+            <div class="form-group">
+                <label for="first-name">الاسم الأول</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="form-group">
+                <label for="phone">رقم الهاتف</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="birth-date">تاريخ الميلاد</label>
+                <input type="date" id="birth-date" name="birth-date">
+            </div>
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="gender">النوع</label>
+                <select id="gender" name="gender">
+                    <option value="">اختر النوع</option>
+                    <option value="male">ذكر</option>
+                    <option value="female">أنثى</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="governorate">المحافظة</label>
+                <select id="governorate" name="governorate">
+                    <option value="">اختر المحافظة</option>
+                    <option value="Elmonofeia">المنوفية</option>
+                    <option value="cairo">القاهرة</option>
+                    <option value="giza">الجيزة</option>
+                    <option value="alex">الإسكندرية</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-primary ml-2 w-100" data-dismiss="modal" id="save" onclick="saveData(tmp)">تسجيل</button>
+                <br>
+                <br>
+                <button type="button" class="btn btn-primary ml-2 w-100" data-dismiss="modal" id="clear" onclick="clearinput()">تنظيف</button>
+            </div>
+    </div>
+    <br>
+    <div class="outputs">
+        <div id="deleteAll" class="w-100 text-center">
+        </div>
+        <table id="table" class="mb-4">
+            <tr>
+                <th>#</th>
+                <th>الاسم</th>
+                <th>رقم الهاتف</th>
+                <th>تاريخ الميلاد</th>
+                <th>البريد الإلكتروني</th>
+                <th>النوع</th>
+                <th>المحافظة</th>
+                <th>الإجراءات</th>
+            </tr>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/unpkg.com_xlsx@0.15.1_dist_xlsx.full.min.js"></script>
+</body>
+</html>
